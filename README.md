@@ -7,3 +7,4 @@ The website is designed to be viewed through browsers (desktop view).
 
 The mobile view is under-development.
 
+https://main--kseauci.netlify.app/
