@@ -10,7 +10,7 @@ function App()
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" index element={<HomePage />} />
           <Route path="/activity" element={<ActivityPage />} />
           <Route path='/activity/:id' element={<ItemView />} />
           <Route path='/events' element={<EventsPage />} />
