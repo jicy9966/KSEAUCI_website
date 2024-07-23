@@ -6,6 +6,7 @@ const Member = ({photo, name_en, name_kr, position_en, position_kr, major}) =>
 {
     return(
         <div className="member-card">
+            {/*eslint-disable-next-line*/}
             <img src={photo ? photo : blank_profile} />
             <div className="info-wrap">
                 <div className="name">
