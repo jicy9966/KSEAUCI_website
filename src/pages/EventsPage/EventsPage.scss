@@ -1,0 +1,257 @@
+@import "../../App.scss";
+
+.content-wrap
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header
+    {
+        font-size: 1.5vw;
+        font-weight: 500;
+        color: $clr-blue;
+        text-align: center;
+        margin-top: 5vh;
+
+        .yellow-line
+        {
+            background-color: $clr-yellow;
+            width: 100%;
+            aspect-ratio: 70 / 1;
+            margin: 3vh 0;
+        }
+    }
+
+    .showcase-wrap
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+        .calendar
+        {
+            width: 60%;
+            padding: 2vh 5vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .month
+            {
+                width: 100%;
+                height: 5vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .date
+                {
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    margin: 5vw;
+                }
+
+                .arrow
+                {
+                    size: 30px;
+
+                    :hover
+                    {
+                        cursor: pointer;
+                        scale: 105%;
+                    }
+                }
+            }
+
+            .weekdays
+            {
+                width: 47vw;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 1.4vw;
+                font-weight: 500;
+                text-transform: capitalize;
+
+                text
+                {
+                    width: 14.28%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .calendar-grid
+            {
+                width: 50vw;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0 1.5vw;
+                font-size: 1.5rem;
+                font-weight: 500;
+        
+                :hover{background-color: $clr-whitegray;}
+
+                .days
+                {
+                    width: 14.28%;
+                    height: 10vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    border: 1px solid $clr-white;
+
+                    .outDate{color: #a9a9a9;}
+
+                    .today
+                    {
+                        color: $clr-red;
+                        font-weight: 600;
+                        text-decoration: underline;
+                        text-underline-offset: 10px;
+                    }
+
+                    .hasEvents
+                    {
+                        color: $clr-blue;
+                        font-weight: 600;
+                        text-decoration: underline;
+                        text-underline-offset: 10px;
+                    }
+                }
+            }
+        }
+
+        .schedule
+        {
+            width: 40%;
+            margin-top: 10vh;
+
+            .today-button
+            {
+                height: 5vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 5vh;
+
+                button
+                {
+                    padding: 5px 30px;
+                    border: none;
+                    border-radius: 4vw;
+                    font-size: 1.3vw;
+                    font-weight: 400;
+                    box-shadow: 4px 4px 4px $clr-gray, -4px -4px 4px $clr-white; 
+                    cursor: pointer;
+                }
+            }
+
+            .selected-date{font-size: 1.5vw;}
+
+            .events-wrap
+            {
+                width: 100%;
+                max-height: 600px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                display: flex;
+                flex-direction: column;
+                padding: 10px 0px;
+
+                .event
+                {
+                    position: relative;
+                    width: 70%;
+                    min-height: 70px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 5vh;
+                    padding: 1vh 1.5vw;
+                    font-size: 1.2rem;
+                    color: $clr-black;
+                    border-style: solid;
+                    border-width: 2px;
+                }
+
+                button
+                {
+                    height: 50%;
+                    width: 4vw;
+                }
+
+                .empty{font-size: 1.2vw;}
+            }
+        }
+    }
+}
+
+.mod
+{
+    width: 50vw;
+    overflow: hidden;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    background-color: $clr-whitegray;
+    color: $clr-black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5vw;
+
+    .close
+    {
+        display: flex;
+        align-self: end;
+        justify-content: center;
+        cursor: pointer;
+
+        width: 1.5vw;
+    }
+
+    .flex-col
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .time, .location
+    {
+        font-size: 1.5vw;
+        font-weight: 600;
+        color: $clr-black;
+    }
+
+    .content
+    {
+        min-height: 20vh;
+        max-height: 50vh;
+        font-size: 1.3vw;
+        color: $clr-black;
+        white-space: pre-line;
+    }
+
+    .links
+    {
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        a
+        {
+            text-decoration: none; 
+            color: $clr-black;
+            font-size: 1.5vw;
+        }
+    }
+}

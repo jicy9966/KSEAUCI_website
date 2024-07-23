@@ -1,0 +1,99 @@
+@import "../../App.scss";
+
+.graybar-footer
+{
+    width: 100%;
+    height: 250px;
+    z-index: 1;
+
+    background-color: $clr-darkgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .logo-wrap
+    {
+        height: 100%;
+        width: 25%;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        img:nth-child(1)
+        {
+            width: 100%;
+            grid-row: 1;
+            grid-column: 2 / 4;
+            z-index: 0;
+            align-self: center;
+        }
+
+        img:nth-child(2)
+        {
+            width: 95%;
+            grid-row: 1;
+            grid-column: 3 / 5;
+            z-index: 1;
+            align-self: center;
+        }
+    }
+
+    .mid-wrap
+    {
+        height: 100%;
+        width: 30%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: -10px 0 0 10px;
+
+        color: $clr-whitegray;
+        font-size: 18px;
+        font-weight: 500;
+        gap: 5px;
+    }
+
+    .right-wrap
+    {
+        height: 100%;
+        width: 40%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10%;
+
+        span
+        {
+            color: $clr-whitegray;
+            font-size: 20px;
+        }
+        
+        .red-line
+        {
+            background-color: $clr-red;
+            height: 2px;
+            width: 30%;
+            margin: 5px 0 3px;
+        }
+
+        .insta-link, .linktree-link
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            gap: 5px;
+            margin: 10px 0 3px;
+            font-size: 18px;
+            color: $clr-whitegray;
+
+            a
+            {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}

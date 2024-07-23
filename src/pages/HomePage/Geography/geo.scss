@@ -1,0 +1,51 @@
+@import "../../../App.scss";
+
+.geo-wrap
+{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 90vh;
+    align-items: center;
+
+    .map
+    {
+        grid-row: 1;
+        grid-column: 1;
+        width: 70vw;
+        height: auto;
+        z-index: 1;
+    }
+
+    .title-box
+    {
+        grid: 1;
+        grid-column: span 5;
+        background-color: $clr-darkgray;
+        opacity: 80%;
+        width: auto;
+        margin-top: 50px;
+        padding: 30px 5px 30px 15px;
+        z-index: 2;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .title
+        {
+            font-size: 1.5vw;
+            color: $clr-whitegray;
+            margin-bottom: 20px
+        }
+
+        .yellow-btn{@include yellow-btn;}
+    }
+
+    .background
+    {
+        position: absolute;
+        background-color: $clr-whitegray;
+        height: 50vh;
+        width: 85%;
+    }
+}

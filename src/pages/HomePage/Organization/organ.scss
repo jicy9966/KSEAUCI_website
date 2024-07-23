@@ -1,0 +1,55 @@
+@import "../../../App.scss";
+
+.organ-wrap
+{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vw;
+
+    .back_logo
+    {
+        aspect-ratio: 1/1;
+        height: auto;
+        width: 40vw;
+        margin-left: -12vw;
+        opacity: 0.5;
+    }
+
+    .text-wrap
+    {
+        height: 50vh;
+        margin-top: -20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .title
+        {
+            font-size: 3vw;
+            font-weight: bold;
+            color: $clr-blue;
+        }
+
+        .yellow-line
+        {
+            background-color: $clr-yellow;
+            width: 35vw;
+            aspect-ratio: 80/1;
+        }
+
+        .bullets
+        {
+            list-style: '> ';
+            opacity: 0.8;
+            color: $clr-darkgray;
+            font-size: 25px;
+            font-weight: 600;
+            
+            li{margin: 10px 0;}
+        }
+
+        .yellow-btn{@include yellow-btn;}
+    }
+}

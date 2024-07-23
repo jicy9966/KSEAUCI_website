@@ -1,0 +1,9 @@
+@import "../../App.scss";
+
+.timegrid-wrap
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem 2rem;
+    padding: 0 10vw;
+}

@@ -1,0 +1,190 @@
+@import "../../../App.scss";
+
+.about-wrap
+{
+    padding-top: 15vh;
+
+    .title
+    {
+        font-size: 3vw;
+        font-weight: bold;
+        color: $clr-blue;
+        padding-left: 13vw;
+    }
+
+    .yellow-line
+    {
+        background-color: $clr-yellow;
+        aspect-ratio: 60/1;
+        width: 18vw;
+        margin-left: 13vw;
+        margin-bottom: 5vh;
+    }
+
+    .cards
+    {
+        width: 100%;
+        gap: 10px;
+
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-around;
+        padding: 0 10vw;
+
+        @mixin list
+        {
+            background-color: $clr-white;
+            width: 25vw;
+            aspect-ratio: 5/6;
+            border-radius: 20px;
+            border-style: solid;
+            border-width: 4px;
+        }
+
+        li:nth-child(1)
+        {
+            @include list;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            .bold{font-weight: bold;}
+            .blue{color: $clr-blue;}
+
+            span{font-size: 1.3vw;}
+
+            .textbox
+            {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                margin-top: -4vh;
+            }
+
+            .quotation
+            {
+                position: absolute;
+                align-self: start;
+                margin-left: 1.8vw;
+            }
+
+            .dash-box
+            {
+                font-size: 1vw;
+                font-weight: 600;
+                margin-top: -3vh;
+                border-style: dashed;
+                border-width: 4px;
+                border-radius: 40px;
+                padding: 5.5vh 0.8vw;
+                text-align: center;
+                line-height: 30px;
+            }
+        }
+
+        li:nth-child(2)
+        {
+            @include list;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 30px 0 0 30px;
+            
+            .visions
+            {
+                height: 45vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin: 10px 20px 50px 0;
+
+                :nth-child(-n + 3)
+                {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: end;
+                    margin: 10px 0;
+                    
+                    font-size: 20px;
+                    font-weight: bold;
+
+                    .black-line
+                    {
+                        background-color: $clr-darkgray;
+                        height: 7vh;
+                        width: 4px;
+                        margin: 0 10px;
+                    }
+
+                    .desc
+                    {
+                        font-size: 1.2vw;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        li:nth-child(3)
+        {
+            @include list;
+
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-around;
+            padding: 2.5vh 0 0 3.5vh;
+
+            .header
+            {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .grayboxes
+            {
+                list-style-type: none;
+                font-size: 30px;
+
+                .box
+                {
+                    border-style: solid;
+                    border-radius: 10px;
+                    border-width: 3px;
+                    background-color: $clr-whitegray;
+                    height: 50px;
+                    width: 20vw;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin: 10px 0;
+                    padding-left: 10px;
+                    gap: 15px;
+
+                    font-size: 1.3vw;
+                    font-weight: 600;
+                }
+            }
+
+            .yellow-btn
+            {
+                background-color: $clr-yellow;
+                border-radius: 20px;
+                border-style: solid;
+                border-width: 2px;
+                padding: 10px 30px;
+                align-self: end;
+
+                color: $clr-black;
+                font-size: 15px;
+                font-weight: 500;
+                text-decoration: none;
+                margin: 0 2vw 5vh 0;
+            }
+        }
+    }
+}

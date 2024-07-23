@@ -1,0 +1,59 @@
+//Raleway Font
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+//Color palette
+$clr-black:      #000;
+$clr-white:      #fff;
+$clr-gray:       #4f4f4f;
+$clr-whitegray:  #d9d9d9;
+$clr-darkgray:   #333;
+$clr-shadowgray: #bbb4e7;
+$clr-blackblue:  #502dff;
+$clr-darkblue:   #3954a4;
+$clr-blue:       #6177e8;
+$clr-fadeyellow: #ffe74e;
+$clr-yellow:     #fff500;
+$clr-red:        #e86565;
+
+//Fit to screen
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;  
+}
+
+//Default font
+body 
+{
+  font-size: 1.6rem;
+  font-family: 'Raleway';
+  color: $clr-black;
+  overflow-x: hidden;
+}
+
+.page-wrap
+{
+  height: fit-content;
+  width: 100vw;
+  background: linear-gradient($clr-white, $clr-whitegray, $clr-white);
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin yellow-btn
+{
+  background-color: $clr-yellow;
+  color: $clr-black;
+  width: fit-content;
+  text-decoration: none;
+  font-size: 1vw;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+//currently fits until innerWidth 1000

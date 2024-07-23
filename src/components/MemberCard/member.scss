@@ -1,0 +1,54 @@
+@import "../../App.scss";
+
+.member-card
+{
+    background-color: $clr-white;
+    height: fit-content;
+    height: 30vh;
+    width: 40vw;
+    box-shadow: 5px 5px 5px $clr-gray;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3vh 0;
+
+    img
+    {
+        padding: 2vw;
+        width: 15vw;
+    }
+
+    .info-wrap
+    {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        .name, .position
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 1.5vw;
+            font-weight: 600;
+            margin: 2px 0;
+
+            .black-line
+            {
+                background-color: $clr-black;
+                height: 4.5vh;
+                width: 0.1vw;
+                margin: 0 1vw;
+            }
+        }
+
+        .major
+        {
+            margin-top: 1vh;
+            color: $clr-gray;
+            font-size: 1.2vw;
+        }
+    }
+}

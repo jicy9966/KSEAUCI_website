@@ -1,0 +1,55 @@
+@import "../../../App.scss";
+ 
+.go-back
+{
+    text-decoration: none;
+    font-size: 3vw;
+    font-weight: 500;
+    color: $clr-gray;
+    padding: 5vh 0 0 10vw;
+}
+
+.item-wrap
+{
+    max-width: 700px;
+    margin: 0vh auto 5vh;
+
+    header
+    {
+        text-align: center;
+
+        h1
+        {
+            font-size: 1.8vw;
+            margin: 1vh 0 0;
+        }
+
+        .item-date
+        {
+            font-size: 1vw;
+            color: $clr-gray;
+            font-weight: 500;
+        }
+    }
+
+    .sub-categories
+    {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2vh;
+    }
+
+    img
+    {
+        width: 30vw;
+        align-self: center;
+    }
+
+    .item-desc
+    {
+        margin-top: 2vh;
+        white-space: pre-line;
+        font-size: 1.2vw;
+    }
+}

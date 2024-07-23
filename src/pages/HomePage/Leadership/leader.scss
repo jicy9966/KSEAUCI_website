@@ -1,0 +1,84 @@
+@import "../../../App.scss";
+
+.struct-wrap
+{
+    margin-bottom: 10vh;
+
+    .title
+    {
+        font-size: 3vw;
+        font-weight: bold;
+        color: $clr-blue;
+        padding-left: 10vw;
+        margin-bottom: 10px;
+    }
+
+    .yellow-line
+    {
+        background-color: $clr-yellow;
+        aspect-ratio: 70/1;
+        width: 38vw;
+        margin-left: 10vw;
+        margin-bottom: 7vh;
+    }
+
+    .struct
+    {
+
+        .struct-tree
+        {
+            position: relative;
+            width: 40vw;
+            margin-left: 10vw;
+            z-index: 1;
+        }
+
+        .demographics
+        {
+            display: flex;
+            flex-direction: row;
+            margin-left: 13vw;
+            z-index: 2;
+
+            .red-line
+            {
+                background-color: $clr-red;
+                height: 40vh;
+                aspect-ratio: 1/40;
+                margin-top: -3vh;
+            }
+
+            .textbox
+            {
+                font-size: 1.5vw;
+                font-weight: 600;
+                padding-left: 1.2vw;
+
+                ul
+                {
+                    list-style-type: "⋅ ";
+                    font-size: 1.2vw;
+                    font-weight: normal;
+                    line-height: 5vh;
+
+                    margin: 1.5vh 0;
+                    padding-left: 2vw;
+                }
+            }
+
+            .yellow-btn
+            {
+                @include yellow-btn;
+            }
+        }
+    }
+
+    .background-logo
+    {
+        position: absolute;
+        opacity: 0.6;
+        width: 60vw;
+        margin-top: -10vh;
+        margin-left: 52vw;
+    }
+}

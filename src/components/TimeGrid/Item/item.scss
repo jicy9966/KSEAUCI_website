@@ -1,0 +1,34 @@
+@import "../../../App.scss";
+
+.item-wrap
+{
+    display: flex;
+    flex-direction: column;
+
+    text
+    {
+        font-size: 1.2vw;
+        margin: 0.5vh 0 1vh;
+    }
+}
+
+.itemCover
+{
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+
+    .image{width: 20vw;}
+}
+
+.itemDesc
+{
+    font-size: 0.8vw;
+    color: $clr-gray;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;   
+}
