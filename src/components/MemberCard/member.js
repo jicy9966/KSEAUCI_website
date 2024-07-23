@@ -6,7 +6,7 @@ const Member = ({photo, name_en, name_kr, position_en, position_kr, major}) =>
 {
     return(
         <div className="member-card">
-            <img src={photo ? photo : blank_profile} alt="member image" />
+            <img src={photo ? photo : blank_profile} />
             <div className="info-wrap">
                 <div className="name">
                     {name_en} <div className="black-line"/> {name_kr}
