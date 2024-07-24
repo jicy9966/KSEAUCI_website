@@ -327,6 +327,7 @@
             text-decoration: none; 
             color: $clr-black;
             font-size: 1.5vw;
+            @media screen and (max-width: $mobile-w) { font-size: 5vw; }
         }
     }
 }
