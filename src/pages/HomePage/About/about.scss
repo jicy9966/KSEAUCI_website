@@ -102,6 +102,7 @@
                 line-height: 30px;
                 @media screen and (max-width: $mobile-w) 
                 { 
+                    width: 90%;
                     font-size: 3vw; 
                     padding: 2.5vh 1.2vw;
                 }

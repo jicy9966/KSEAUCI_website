@@ -25,7 +25,11 @@
         width: 38vw;
         margin-left: 10vw;
         margin-bottom: 7vh;
-        @media screen and (max-width: $mobile-w) { width: 60vw; }
+        @media screen and (max-width: $mobile-w) 
+        { 
+            width: 60vw; 
+            margin-bottom: 3vh;
+        }
     }
 
     .struct
@@ -111,7 +115,7 @@
             height: 50vh;
             width: auto;
             aspect-ratio: 1/1;
-            margin-top: 10vh;
+            margin-top: 5vh;
         }
     }
 }
