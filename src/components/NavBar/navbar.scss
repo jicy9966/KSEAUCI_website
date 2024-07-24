@@ -39,10 +39,15 @@
         {
             margin-left: 10px;
             text-wrap: nowrap;
-            font-size: 3.2vw;
             font-weight: bolder;
+            font-size: 6vh;
             color: $clr-white;
             text-shadow: 0px 3px 5px $clr-gray;
+
+            @media screen and (max-width: $pad-w) //both for pad and mobile
+            {
+                font-size: 3vh;
+            }
         }
     }
 
@@ -79,21 +84,65 @@
                 height: 100%;
                 padding: 0 10px;
 
-                &:hover
-                {
-                    background-color: $clr-blue;
-                }
+                &:hover { background-color: $clr-blue; }
 
                 a, Link
                 {
                     color: $clr-white;
-                    font-size: 1.3vw;
+                    font-size: 2.8vh;
                     text-shadow: 2px 2px 4px #000;
                     text-wrap: nowrap;
                     text-decoration: none;
                     margin: 0 15px;
+
+                    @media screen and (max-width: $pad-w) { font-size: 2.5vh; }
                 }
             }
         }
+
+        .dropdown
+        {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+
+            .drop-btn
+            {
+                background-color: $clr-whitegray;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.drop-tabs
+{
+    background-color: $clr-white;
+    border-style: none;
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh;
+
+    li
+    {
+        display: flex;
+        align-items: center;
+        width: 40vw;
+        padding: 10px;
+        a
+        {
+            text-decoration: none;
+            font-size: 3vw;
+            color: $clr-gray;
+        }
+        &:hover{background-color: $clr-blue;}
     }
 }

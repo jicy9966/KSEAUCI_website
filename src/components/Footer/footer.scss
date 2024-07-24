@@ -4,6 +4,7 @@
 {
     width: 100%;
     height: 250px;
+    
     z-index: 1;
 
     background-color: $clr-darkgray;
@@ -36,6 +37,8 @@
             z-index: 1;
             align-self: center;
         }
+
+        @media screen and (max-width: $mobile-w) { height: 150px; }
     }
 
     .mid-wrap
@@ -52,6 +55,12 @@
         font-size: 18px;
         font-weight: 500;
         gap: 5px;
+
+        @media screen and (max-width: $mobile-w) 
+        { 
+            width: 40%;
+            font-size: 10px;
+        }
     }
 
     .right-wrap
@@ -64,10 +73,17 @@
         justify-content: center;
         padding-left: 10%;
 
+        @media screen and (max-width: $mobile-w) 
+        { 
+            justify-content: center;
+            padding-left: 10px; 
+        }
+
         span
         {
             color: $clr-whitegray;
             font-size: 20px;
+            @media screen and (max-width: $mobile-w) { font-size: 10px; }
         }
         
         .red-line
@@ -76,6 +92,7 @@
             height: 2px;
             width: 30%;
             margin: 5px 0 3px;
+            @media screen and (max-width: $mobile-w) { width: 50%; }
         }
 
         .insta-link, .linktree-link
@@ -88,6 +105,12 @@
             margin: 10px 0 3px;
             font-size: 18px;
             color: $clr-whitegray;
+
+            @media screen and (max-width: $mobile-w) 
+            { 
+                font-size: 10px; 
+                margin: 5px 0 2px;
+            }
 
             a
             {

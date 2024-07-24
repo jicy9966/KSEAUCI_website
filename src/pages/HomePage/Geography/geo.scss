@@ -7,6 +7,14 @@
     grid-auto-rows: 90vh;
     align-items: center;
 
+    @media screen and (max-width: $mobile-w) 
+    { 
+        display: flex; 
+        flex-direction: column; 
+        margin: 100px 0;
+        align-items: start;
+    }
+
     .map
     {
         grid-row: 1;
@@ -14,15 +22,25 @@
         width: 70vw;
         height: auto;
         z-index: 1;
+
+        @media screen and (max-width: $mobile-w) { width: 90vw; }
     }
 
     .title-box
     {
-        grid: 1;
+        grid-row: 1;
         grid-column: span 5;
+
         background-color: $clr-darkgray;
         opacity: 80%;
         width: auto;
+
+        @media screen and (max-width: $mobile-w) 
+        { 
+            width: 70%; 
+            margin-top: 5px;
+        }
+
         margin-top: 50px;
         padding: 30px 5px 30px 15px;
         z-index: 2;
@@ -35,10 +53,16 @@
         {
             font-size: 1.5vw;
             color: $clr-whitegray;
-            margin-bottom: 20px
+            margin-bottom: 20px;
+
+            @media screen and (max-width: $mobile-w) { font-size: 5vw; }
         }
 
-        .yellow-btn{@include yellow-btn;}
+        .yellow-btn
+        {
+            @include yellow-btn;
+            @media screen and (max-width: $mobile-w) { font-size: 3vw; }
+        }
     }
 
     .background
@@ -47,5 +71,7 @@
         background-color: $clr-whitegray;
         height: 50vh;
         width: 85%;
+        
+        @media screen and (max-width: $mobile-w) { height: 30vh; margin-top: 10vh;}
     }
 }

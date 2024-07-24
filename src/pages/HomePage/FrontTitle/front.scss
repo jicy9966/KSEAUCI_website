@@ -6,6 +6,7 @@
     flex-direction: column;
     padding: 20vh 0 0 10vw;
     margin-bottom: 15vh;
+    @media screen and (max-width: $mobile-w) { margin-bottom: 33vh; }
     
     .title
     {
@@ -17,6 +18,8 @@
         background-clip: text;
         -webkit-background-clip: text;
         -moz-background-clip: text;
+
+        @media screen and (max-width: $mobile-w) { font-size: 10vw; }
     }
 
     .yellow-line
@@ -25,6 +28,10 @@
         width: 55%;
         aspect-ratio: 80 / 1;
         margin: 10px 0;
+
+        @media screen and (min-width: $mobile-w) and (max-width: $pad-w) { width: 50%; }
+
+        @media screen and (max-width: $mobile-w) { width: 85%; }
     }
 
     .subtitle
@@ -34,6 +41,8 @@
         font-size: 2vw;
         font-weight: bold;
         text-wrap: nowrap;
+
+        @media screen and (max-width: $mobile-w) { font-size: 3vw; }
     }
 
     .buttons
@@ -50,10 +59,14 @@
             font-weight: bold;
             padding: 10px 22px;
             border-radius: 10px;
+
+            @media screen and (min-width: $mobile-w) and (max-width: $pad-w) { font-size: 1.5vw; }
+            @media screen and (max-width: $mobile-w) { font-size: 3vw; }
         }
 
         .yellow-btn{background-color: $clr-yellow;}
 
         .white-btn{background-color: $clr-white;}
+        
     }
 }

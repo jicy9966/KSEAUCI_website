@@ -11,6 +11,8 @@
         color: $clr-blue;
         padding-left: 10vw;
         margin-bottom: 10px;
+
+        @media screen and (max-width: $mobile-w) { font-size: 5vw; }
     }
 
     .yellow-line
@@ -20,6 +22,7 @@
         width: 38vw;
         margin-left: 10vw;
         margin-bottom: 7vh;
+        @media screen and (max-width: $mobile-w) { width: 60vw; }
     }
 
     .struct
@@ -31,6 +34,8 @@
             width: 40vw;
             margin-left: 10vw;
             z-index: 1;
+            
+            @media screen and (max-width: $mobile-w) { width: 80vw; }
         }
 
         .demographics
@@ -46,6 +51,8 @@
                 height: 40vh;
                 aspect-ratio: 1/40;
                 margin-top: -3vh;
+
+                @media screen and (max-width: $mobile-w) { height: 20vh; }
             }
 
             .textbox
@@ -53,6 +60,12 @@
                 font-size: 1.5vw;
                 font-weight: 600;
                 padding-left: 1.2vw;
+
+                @media screen and (max-width: $mobile-w) 
+                { 
+                    font-size: 3vw;
+                    padding-left: 2vw;
+                }
 
                 ul
                 {
@@ -63,12 +76,20 @@
 
                     margin: 1.5vh 0;
                     padding-left: 2vw;
+
+                    @media screen and (max-width: $mobile-w) 
+                    { 
+                        font-size: 3vw;
+                        padding-left: 2vw;
+                        line-height: 2vh;
+                    }
                 }
             }
 
             .yellow-btn
             {
                 @include yellow-btn;
+                @media screen and (max-width: $mobile-w) { font-size: 2.5vw; }
             }
         }
     }
@@ -80,5 +101,15 @@
         width: 60vw;
         margin-top: -10vh;
         margin-left: 52vw;
+
+        @media screen and (max-width: $mobile-w) 
+        { 
+            height: 50vh;
+            width: auto;
+            aspect-ratio: 1/1;
+            margin-top: 10vh;
+        }
+
+        overflow: hidden;
     }
 }

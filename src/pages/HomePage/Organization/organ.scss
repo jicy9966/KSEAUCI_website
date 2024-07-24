@@ -15,12 +15,20 @@
         width: 40vw;
         margin-left: -12vw;
         opacity: 0.5;
+        @media screen and (max-width: $mobile-w) { opacity: 0.2; }
     }
 
     .text-wrap
     {
         height: 50vh;
         margin-top: -20vh;
+
+        @media screen and (max-width: $mobile-w) 
+        { 
+            margin: 0 0 0 -25vw; 
+            height: 30vh;
+        }
+
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -30,6 +38,7 @@
             font-size: 3vw;
             font-weight: bold;
             color: $clr-blue;
+            @media screen and (max-width: $mobile-w) { font-size: 6vw; }
         }
 
         .yellow-line
@@ -37,6 +46,7 @@
             background-color: $clr-yellow;
             width: 35vw;
             aspect-ratio: 80/1;
+            @media screen and (max-width: $mobile-w) { width: 65vw; }
         }
 
         .bullets
@@ -46,10 +56,15 @@
             color: $clr-darkgray;
             font-size: 25px;
             font-weight: 600;
+            @media screen and (max-width: $mobile-w) { font-size: 15px; }
             
             li{margin: 10px 0;}
         }
 
-        .yellow-btn{@include yellow-btn;}
+        .yellow-btn
+        {
+            @include yellow-btn;
+            @media screen and (max-width: $mobile-w) { font-size: 3vw; }
+        }
     }
 }

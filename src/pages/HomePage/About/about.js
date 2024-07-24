@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./about.scss";
 import { FaQuoteLeft, FaRegCalendarCheck, FaTrophy } from "react-icons/fa";
 import { FaGear, FaPeopleGroup } from "react-icons/fa6"
@@ -6,6 +6,26 @@ import { Link } from "react-router-dom";
 
 const AboutSection = () =>
 {
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 900); //detect viewport type
+
+    useEffect(() => 
+    {
+        const handleResize = () => 
+        {
+            if (window.innerWidth > 900)
+            {
+                setIsDesktop(true);
+            } else 
+            {
+                setIsDesktop(false);
+            }
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return(
         <div id="about" className="about-wrap">
             <div className="title">About KSEA</div>
@@ -19,7 +39,11 @@ const AboutSection = () =>
                         <span><span className="bold blue">E</span>ngineers</span>
                         <span><span className="bold blue">A</span>ssociation</span>
                     </div>
-                    <FaQuoteLeft size={40} className="quotation"/>
+                    {
+                        isDesktop ?
+                        <FaQuoteLeft size={40} className="quotation"/> :
+                        <FaQuoteLeft size={20} className="quotation"/>
+                    }
                     <div className="dash-box">
                         한국과 미국에 있는 과학자들 교류를 통해 <br/>
                         다양한 연구를 촉진하고, 재미 한인 유학생들의 <br/>
