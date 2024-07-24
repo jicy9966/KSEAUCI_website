@@ -94,8 +94,6 @@
                     text-wrap: nowrap;
                     text-decoration: none;
                     margin: 0 15px;
-
-                    @media screen and (max-width: $pad-w) { font-size: 2.5vh; }
                 }
             }
         }
@@ -131,16 +129,16 @@
     justify-content: space-between;
     padding: 3vh;
 
-    li
+    a
     {
         display: flex;
         align-items: center;
-        width: 40vw;
+        width: 50vw;
         padding: 10px;
-        a
+        text-decoration: none;
+        li
         {
-            text-decoration: none;
-            font-size: 3vw;
+            font-size: 5vw;
             color: $clr-gray;
         }
         &:hover{background-color: $clr-blue;}

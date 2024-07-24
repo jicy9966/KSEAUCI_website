@@ -54,18 +54,18 @@ const NavBar = () =>
                     <div className="dropdown">
                         <Popup trigger={<button className="drop-btn"><FaBars size={30}/></button>} arrow={false} position="bottom right">
                             <ul className="drop-tabs">
-                                <li>
-                                    <a href="/#about">About</a>
-                                </li>
-                                <li>
-                                    <a href="/activity">Activity</a>
-                                </li>
-                                <li>
-                                    <a href="/events">Upcoming Events</a>
-                                </li>
-                                <li>
-                                    <a href="/members">Members</a>
-                                </li>
+                                <a href="/#about">
+                                    <li>About</li>
+                                </a>
+                                <a href="/activity">
+                                    <li>Activity</li>
+                                </a>
+                                <a href="/events">
+                                    <li>Upcoming Events</li>
+                                </a>
+                                <a href="/members">
+                                    <li>Members</li>
+                                </a>
                             </ul>
                         </Popup>
                     </div>
