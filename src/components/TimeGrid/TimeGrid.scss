@@ -9,6 +9,8 @@
 
     @media screen and (max-width: $mobile-w) 
     { 
+        display: flex;
+        flex-direction: column;
         padding: 0 5vw; 
         grid-gap: 0 1.5rem;
     }

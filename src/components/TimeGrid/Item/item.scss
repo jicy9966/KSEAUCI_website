@@ -12,7 +12,8 @@
 
         @media screen and (max-width: $mobile-w) 
         { 
-            font-size: 2.5vw; 
+            padding: 0 10vw;
+            font-size: 5vw; 
             margin: 0.2vh 0 0.8vh;
         }
     }
@@ -29,7 +30,7 @@
     .image
     {
         width: 20vw;
-        @media screen and (max-width: $mobile-w) { width: 25vw; }
+        @media screen and (max-width: $mobile-w) { width: 70vw; }
     }
 }
 
@@ -44,5 +45,9 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;   
 
-    @media screen and (max-width: $mobile-w) { font-size: 2vw; }
+    @media screen and (max-width: $mobile-w) 
+    { 
+        font-size: 3vw; 
+        padding: 0 10vw;
+    }
 }
