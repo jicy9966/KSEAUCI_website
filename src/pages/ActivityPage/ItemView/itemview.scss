@@ -7,6 +7,8 @@
     font-weight: 500;
     color: $clr-gray;
     padding: 5vh 0 0 10vw;
+
+    @media screen and (max-width: $mobile-w) { font-size: 8vw; }
 }
 
 .item-wrap
@@ -22,6 +24,12 @@
         {
             font-size: 1.8vw;
             margin: 1vh 0 0;
+
+            @media screen and (max-width: $mobile-w) 
+            { 
+                font-size: 4.5vw; 
+                margin: 1vh 0 0.5vh;
+            }
         }
 
         .item-date
@@ -29,6 +37,8 @@
             font-size: 1vw;
             color: $clr-gray;
             font-weight: 500;
+
+            @media screen and (max-width: $mobile-w) { font-size: 3vw; }
         }
     }
 
@@ -38,12 +48,15 @@
         justify-content: center;
         gap: 1rem;
         margin-bottom: 2vh;
+
+        @media screen and (max-width: $mobile-w) { gap: 0.5rem; }
     }
 
     img
     {
         width: 30vw;
         align-self: center;
+        @media screen and (max-width: $mobile-w) { width: 80vw; }
     }
 
     .item-desc
@@ -51,5 +64,12 @@
         margin-top: 2vh;
         white-space: pre-line;
         font-size: 1.2vw;
+
+        @media screen and (max-width: $mobile-w) 
+        { 
+            font-size: 3vw;
+            padding: 0 10vw;
+            white-space: unset;
+        }
     }
 }

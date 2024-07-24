@@ -14,12 +14,21 @@
         text-align: center;
         margin-top: 5vh;
 
+        @media screen and (max-width: $mobile-w) { margin: 5vh 0 1vh; }
+
+        h1
+        {
+            @media screen and (max-width: $mobile-w) { font-size: 6vw; }
+        }
+
         .yellow-line
         {
             background-color: $clr-yellow;
             width: 100%;
             aspect-ratio: 70 / 1;
             margin: 3vh 0;
+
+            @media screen and (max-width: $mobile-w) { margin: 2vh 0; }
         }
     }
 
@@ -30,6 +39,8 @@
         justify-content: center;
         width: 100%;
 
+        @media screen and (max-width: $mobile-w) { flex-direction: column; }
+
         .calendar
         {
             width: 60%;
@@ -37,6 +48,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @media screen and (max-width: $mobile-w) { width: 100%; }
 
             .month
             {
@@ -52,6 +65,8 @@
                     font-weight: 500;
                     text-transform: capitalize;
                     margin: 5vw;
+
+                    @media screen and (max-width: $mobile-w) { font-size: 1.3rem; }
                 }
 
                 .arrow
@@ -77,6 +92,12 @@
                 font-weight: 500;
                 text-transform: capitalize;
 
+                @media screen and (max-width: $mobile-w) 
+                { 
+                    width: 97%; 
+                    font-size: 5vw;
+                }
+
                 text
                 {
                     width: 14.28%;
@@ -98,6 +119,12 @@
         
                 :hover{background-color: $clr-whitegray;}
 
+                @media screen and (max-width: $mobile-w) 
+                { 
+                    width: 100%; 
+                    font-size: 1.2rem;
+                }
+
                 .days
                 {
                     width: 14.28%;
@@ -107,6 +134,8 @@
                     justify-content: center;
                     cursor: pointer;
                     border: 1px solid $clr-white;
+
+                    @media screen and (max-width: $mobile-w) { height: 5vh; }
 
                     .outDate{color: #a9a9a9;}
 
@@ -134,6 +163,15 @@
             width: 40%;
             margin-top: 10vh;
 
+            @media screen and (max-width: $mobile-w) 
+            { 
+                width: 100%; 
+                margin-top: 2vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
             .today-button
             {
                 height: 5vh;
@@ -141,6 +179,8 @@
                 align-items: center;
                 justify-content: space-between;
                 margin-bottom: 5vh;
+                
+                @media screen and (max-width: $mobile-w) { margin-bottom: 2vh; }
 
                 button
                 {
@@ -151,10 +191,16 @@
                     font-weight: 400;
                     box-shadow: 4px 4px 4px $clr-gray, -4px -4px 4px $clr-white; 
                     cursor: pointer;
+
+                    @media screen and (max-width: $mobile-w) { font-size: 4vw; }
                 }
             }
 
-            .selected-date{font-size: 1.5vw;}
+            .selected-date
+            {
+                font-size: 1.5vw;
+                @media screen and (max-width: $mobile-w) { font-size: 4vw; }
+            }
 
             .events-wrap
             {
@@ -165,6 +211,8 @@
                 display: flex;
                 flex-direction: column;
                 padding: 10px 0px;
+
+                @media screen and (max-width: $mobile-w) { align-items: center; }
 
                 .event
                 {
@@ -180,15 +228,30 @@
                     color: $clr-black;
                     border-style: solid;
                     border-width: 2px;
+
+                    @media screen and (max-width: $mobile-w) 
+                    { 
+                        width: 90%;
+                        font-size: 1rem;
+                    }
                 }
 
                 button
                 {
                     height: 50%;
                     width: 4vw;
+
+                    @media screen and (max-width: $mobile-w) 
+                    { 
+                        width: 15vw;
+                    }
                 }
 
-                .empty{font-size: 1.2vw;}
+                .empty
+                {
+                    font-size: 1.2vw;
+                    @media screen and (max-width: $mobile-w) { font-size: 4vw; }
+                }
             }
         }
     }
@@ -208,6 +271,13 @@
     justify-content: space-between;
     padding: 1.5vw;
 
+    @media screen and (max-width: $mobile-w) 
+    { 
+        width: 85vw;
+        height: 50vh; 
+        padding: 25px;
+    }
+
     .close
     {
         display: flex;
@@ -216,13 +286,16 @@
         cursor: pointer;
 
         width: 1.5vw;
+
+        @media screen and (max-width: $mobile-w) { width: 5vw; }
     }
 
-    .flex-col
+    .flex-tpo
     {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        @media screen and (max-width: $mobile-w) { flex-direction: column; }
     }
 
     .time, .location
@@ -230,6 +303,7 @@
         font-size: 1.5vw;
         font-weight: 600;
         color: $clr-black;
+        @media screen and (max-width: $mobile-w) { font-size: 5vw; }
     }
 
     .content
@@ -239,6 +313,7 @@
         font-size: 1.3vw;
         color: $clr-black;
         white-space: pre-line;
+        @media screen and (max-width: $mobile-w) { font-size: 5vw; }
     }
 
     .links

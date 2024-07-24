@@ -13,10 +13,22 @@
     align-items: center;
     margin: 3vh 0;
 
+    @media screen and (max-width: $mobile-w)
+    {
+        height: 15vh;
+        width: 80vw;
+    }
+
     img
     {
         padding: 2vw;
         width: 15vw;
+
+        @media screen and (max-width: $mobile-w) 
+        {
+            padding: 4vw;
+            width: 30vw;
+        }
     }
 
     .info-wrap
@@ -25,6 +37,8 @@
         display: flex;
         flex-direction: column;
         justify-content: end;
+
+        @media screen and (max-width: $mobile-w) { height: 60%; }
 
         .name, .position
         {
@@ -35,12 +49,20 @@
             font-weight: 600;
             margin: 2px 0;
 
+            @media screen and (max-width: $mobile-w) { font-size: 3vw; }
+
             .black-line
             {
                 background-color: $clr-black;
                 height: 4.5vh;
                 width: 0.1vw;
                 margin: 0 1vw;
+
+                @media screen and (max-width: $mobile-w) 
+                { 
+                    width: 0.2vw;
+                    height: 2vh; 
+                }
             }
         }
 
@@ -49,6 +71,7 @@
             margin-top: 1vh;
             color: $clr-gray;
             font-size: 1.2vw;
+            @media screen and (max-width: $mobile-w) { font-size: 2vw; }
         }
     }
 }

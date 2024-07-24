@@ -8,6 +8,8 @@
     border-radius: 5px;
     margin: 2.5vh 0 4vh;
 
+    @media screen and (max-width: $mobile-w) { width: 50vw; }
+
     form
     {
         display: flex;
@@ -18,7 +20,7 @@
     input
     {
         background-color: $clr-white;
-        width: 60%;
+        width: 70%;
         outline: none;
         border: none;
         margin-left: 5px;
@@ -30,6 +32,8 @@
         font-size: 1.3vw;
         margin: 0 10px;
         cursor: pointer;
+
+        @media screen and (max-width: $mobile-w) { font-size: 3vw; }
     }
 
     button
@@ -43,5 +47,7 @@
         width: 4vw;
         aspect-ratio: 3/1;
         text-align: center;
+
+        @media screen and (max-width: $mobile-w) { width: 12vw; }
     }
 }

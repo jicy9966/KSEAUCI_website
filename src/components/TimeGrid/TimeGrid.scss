@@ -6,4 +6,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem 2rem;
     padding: 0 10vw;
+
+    @media screen and (max-width: $mobile-w) 
+    { 
+        padding: 0 5vw; 
+        grid-gap: 0 1.5rem;
+    }
 }

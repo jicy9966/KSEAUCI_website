@@ -82,7 +82,7 @@ const EventsPage = () =>
                                                 <div className="mod">
                                                     <button className="close" onClick={close}>X</button>
                                                     <text className="content">{event.description}</text>
-                                                    <div className="flex-col">
+                                                    <div className="flex-tpo">
                                                         {event.time ? <text className="time">TIME: {event.time}</text> : null}
                                                         {event.location ? <text className="location">Location: {event.location}</text> : null}
                                                     </div>

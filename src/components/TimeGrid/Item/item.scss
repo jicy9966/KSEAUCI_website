@@ -9,6 +9,12 @@
     {
         font-size: 1.2vw;
         margin: 0.5vh 0 1vh;
+
+        @media screen and (max-width: $mobile-w) 
+        { 
+            font-size: 2.5vw; 
+            margin: 0.2vh 0 0.8vh;
+        }
     }
 }
 
@@ -18,7 +24,13 @@
     display: flex;
     justify-content: center;
 
-    .image{width: 20vw;}
+    @media screen and (max-width: $mobile-w) { margin-bottom: 1vh; }
+
+    .image
+    {
+        width: 20vw;
+        @media screen and (max-width: $mobile-w) { width: 25vw; }
+    }
 }
 
 .itemDesc
@@ -31,4 +43,6 @@
     line-clamp: 3;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;   
+
+    @media screen and (max-width: $mobile-w) { font-size: 2vw; }
 }

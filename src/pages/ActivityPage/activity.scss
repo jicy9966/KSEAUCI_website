@@ -8,11 +8,17 @@
 
     .title
     {
+        margin-top: 8vh;
         font-size: 3.3vw;
         font-weight: 600;
         color: $clr-blue;
         text-align: center;
-        margin-top: 8vh;
+       
+        @media screen and (max-width: $mobile-w)
+        {
+            margin-top: 3vh;
+            font-size: 7vw;
+        }
     }
     
     .yellow-line
@@ -21,6 +27,12 @@
         width: 40%;
         aspect-ratio: 70 / 1;
         margin: 5vh 0;
+
+        @media screen and (max-width: $mobile-w)
+        {
+            margin: 2vh 0;
+            width: 70%;
+        }
     }
 
     .subheader
@@ -29,5 +41,10 @@
         font-weight: 300;
         font-size: 2vw;
         margin-bottom: 3vh;
+
+        @media screen and (max-width: $mobile-w)
+        {
+            font-size: 5vw;
+        }
     }
 }
