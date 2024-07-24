@@ -28,7 +28,7 @@ const ItemView = () =>
                         <p className="item-date">Date: {item.date}</p>
                         <h1>{item.title}</h1>
                         <div className="sub-categories">
-                            {item.subCategory.map((category, i) => (<div key={i}><text>{category}</text></div>))}
+                            {item.subCategory.map((category, i) => (<div key={i}>{category}</div>))}
                         </div>
                     </header>
                     <img src={item.cover} alt=" "></img>
