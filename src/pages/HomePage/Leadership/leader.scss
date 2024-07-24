@@ -2,8 +2,10 @@
 
 .struct-wrap
 {
+    position: relative;
     margin-bottom: 10vh;
     width: 100%;
+    overflow-x: hidden;
 
     .title
     {
@@ -102,7 +104,6 @@
         width: 60vw;
         margin-top: -10vh;
         margin-left: 52vw;
-        overflow: hidden;
 
         @media screen and (max-width: $mobile-w) 
         { 
