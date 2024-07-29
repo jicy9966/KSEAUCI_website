@@ -41,8 +41,8 @@
             text-wrap: nowrap;
             font-weight: bolder;
             font-size: 6vh;
-            color: $clr-white;
-            text-shadow: 0px 3px 5px $clr-gray;
+            color: $clr-blue;
+            text-shadow: 3px 3px 2px $clr-whitegray;
 
             @media screen and (max-width: $pad-w) //both for pad and mobile
             {
@@ -58,7 +58,7 @@
         z-index: 11;
         width: auto;
         height: 60px;
-        background-color: $clr-whitegray;
+        background-color: $clr-white;
         border-radius: 50px;
         margin-left: 10px;
 
@@ -84,13 +84,13 @@
                 height: 100%;
                 padding: 0 10px;
 
-                &:hover { background-color: $clr-blue; }
+                &:hover { background-color: $clr-whitegray; text-shadow: 2px 2px 4px $clr-white; }
 
                 a, Link
                 {
-                    color: $clr-white;
+                    color: $clr-blue;
                     font-size: 2.8vh;
-                    text-shadow: 2px 2px 4px #000;
+                    
                     text-wrap: nowrap;
                     text-decoration: none;
                     margin: 0 15px;

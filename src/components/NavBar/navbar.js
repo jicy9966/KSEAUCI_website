@@ -32,7 +32,7 @@ const NavBar = () =>
         <div className="graybar-header">
             <Link to="/" className="logo" onClick={ScrollToTop}>
                 <img src={ksea_logo} alt="ksea logo" />
-                <span>KSEA UCI</span>
+                <span>UCI KSEA</span>
             </Link>
             <div className="whitebar">
                 {

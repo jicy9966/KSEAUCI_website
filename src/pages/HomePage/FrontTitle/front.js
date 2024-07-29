@@ -5,7 +5,7 @@ const FrontTitle = () =>
 {
     return(
         <div className="title-wrap">
-            <div className="title">KSEA UC IRVINE</div>
+            <div className="title">UCI KSEA</div>
             <div className="yellow-line"/>
             <div className="subtitle">
                 <div>Promoting career development, networking, and service <br/>
