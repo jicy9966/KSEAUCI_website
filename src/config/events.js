@@ -92,6 +92,16 @@ export const eventList =
                 linkRSVP: null,
                 linkInfo: null,
             },
+            {
+                title: "Anteater Involvement Fair",
+                description: 
+                    "오는 9월 23일 월요일에 UCI 에서 열리는 Club Fair인 Anteater Involvement \nFair에 저희 KSEA UCI가 참가할 예정입니다 🤩"
+                    + "\n장소는 Aldrich Park, UCI Campus이고 부스 👉F267👈 이니 꼭 들러주세요!",
+                time: "11 AM ~ 4 PM",
+                location: "Aldrich Park, Booth F267",
+                linkRSVP: null,
+                linkInfo: "https://forms.gle/YTm2F7zMBnBquvp56"
+            }
         ]
     },
     {

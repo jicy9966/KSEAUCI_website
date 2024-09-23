@@ -6,6 +6,7 @@ import item5 from "../assets/images/item5.png"
 import item6 from "../assets/images/item6.png"
 import item7 from "../assets/images/item7.png"
 import item8 from "../assets/images/item8.png"
+import item9 from "../assets/images/item9.png"
 
 //새로운 계시글 가이드라인
 //id = 가장 최근 + 1
@@ -15,6 +16,22 @@ import item8 from "../assets/images/item8.png"
 
 export const itemList = 
 [
+    {
+        id: 9,
+        title: "2024-2025 KSEA UCI Board Members",
+        date: "Sept 17, 2024",
+        category: "board, members, introduction, board members, 2024, 2025",
+        subCategory: ["#board_members", "#introduction", "#get_to_know_us"],
+        description: 
+            "👋 안녕하세요! KSEA UCI 입니다 💙\n" + 
+            "다가오는 2024-2025년도에 KSEA UCI를 이끌어 갈 새로운 임원진을 소개합니다!\n" + 
+            "KseaGPT가 소개하는 임원진들을 알아보고, 올해는 더욱 유익하고 다채로운 이벤트들이 준비되어 있으니 기대해 주세요! :)\n" + 
+            "\n👋 Hello! this is KSEA UCI 💙\n" + 
+            "Introducing the 2024-2025 KSEA UCI Board Members!" + 
+            "Get to know our board members through the insights shared by KseaGPT and look forward to even more informative and exciting events planned for this year! :)",
+        cover: item9,
+    },
+
     {
         id: 8,
         title: "Study Night & After Social",
